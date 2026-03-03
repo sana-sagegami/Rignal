@@ -1,0 +1,18 @@
+services:
+  # 1. Go言語のAPIサーバー
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  # 2. PostgreSQL（データベース）
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: sana
+      POSTGRES_PASSWORD: zenpassword
+      POSTGRES_DB: auto_zen_db
+    ports:
+      - "5432:5432"
