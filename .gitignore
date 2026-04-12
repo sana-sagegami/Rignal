@@ -1,0 +1,9 @@
+/docker
+.env*
+*.md
+
+# Build artifacts
+/tmp
+main
+
+*.gz
