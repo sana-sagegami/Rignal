@@ -27,8 +27,7 @@ func (ctrl *UserController) Signup(c *gin.Context) {
 		return
 	}
 
-	err := ctrl.Service.Signup(input.Username, input.Password)
-	if err != nil {
+	if err := ctrl.Service.Signup(input.Username, input.Password); err != nil {
 		c.JSON(http.StatusConflict, gin.H{"error": "ユーザーの作成に失敗しました"})
 		return
 	}
