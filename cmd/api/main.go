@@ -26,7 +26,6 @@ func main() {
 	logCtrl := http.NewLogController(logService)
 	userCtrl := http.NewUserController(userService)
 
-
 	// Ginルーター
 	r := gin.Default()
 
@@ -39,7 +38,7 @@ func main() {
 	r.POST("/signup", userCtrl.Signup)
 	r.POST("/login", userCtrl.Login)
 
-	fmt.Println("/signup", userCtrl.Signup)
+	fmt.Printf("/signup handler type: %T\n", userCtrl.Signup)
 
 	// サーバー起動
 	fmt.Println("Auto-Zen Backend is starting on :8081...")
