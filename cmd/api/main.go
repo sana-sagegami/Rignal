@@ -37,6 +37,7 @@ func main() {
 
 	// ユーザー
 	r.POST("/signup", userCtrl.Signup)
+	r.POST("/login", userCtrl.Login)
 
 	fmt.Println("/signup", userCtrl.Signup)
 

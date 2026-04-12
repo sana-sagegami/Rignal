@@ -28,3 +28,25 @@ func (ctrl *UserController) Signup(c *gin.Context) {
 	}
 	c.JSON(http.StatusCreated, gin.H{"message": "User created successfully!"})
 }
+
+func (ctrl *UserController) Login(c *gin.Context) {
+	var input struct {
+		Username string `json:"username" binding:"required"`
+		Password string `json:"password" binding:"required"`
+	}
+
+	if err := c.ShouldBindJSON(&input); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "入力が正しくありません"})
+		return
+	}
+
+	token, err := ctrl.Service.Login(input.Username, input.Password)
+	if err != nil {
+		c.JSON(http.StatusUnauthorized, gin.H{"error": "ユーザー名またはパスワードが違います"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"token": token,
+	})
+}
