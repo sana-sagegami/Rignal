@@ -14,13 +14,13 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o main ./cmd/api/main.go
 FROM alpine:latest
 
 # 本番環境でSSL通信が必要になった時のための証明書
-RUN apk --no-code add ca-certificates
+RUN apk --no-cache add ca-certificates
 
 WORKDIR /app/
 
 # ビルド用から作成したバイナリファイルだけをコピー
 COPY --from=builder /app/main .
 # .envファイル
-COPY --from=builder /app/.env .
+# COPY --from=builder /app/.env .
 
 CMD ["./main"]
