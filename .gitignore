@@ -7,3 +7,6 @@
 main
 
 *.gz
+
+# Docker database data
+postgres_data/

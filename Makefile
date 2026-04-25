@@ -7,4 +7,4 @@ restart:
 logs:
 	docker compose logs -f
 login:
-	docker exec -it db mysql -u root -p
+	docker exec -it db psql -U sana -d auto_zen_db
