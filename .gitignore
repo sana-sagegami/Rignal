@@ -10,3 +10,7 @@ main
 
 # Docker database data
 postgres_data/
+
+# Mac system files
+.DS_Store
+**/.DS_Store
