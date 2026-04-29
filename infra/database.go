@@ -46,6 +46,7 @@ func InitDB() *gorm.DB {
 		&models.ReadinessRecord{},
 		&models.SleepRecord{},
 		&models.DailySummary{},
+		&models.IBIRecord{},
 	)
 	if err != nil {
 		log.Fatal("マイグレーションに失敗しました: ", err)

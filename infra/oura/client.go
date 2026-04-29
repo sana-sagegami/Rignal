@@ -68,6 +68,17 @@ type SleepContributors struct {
 	TotalSleep  *int `json:"total_sleep"`
 }
 
+// Sleep は /v2/usercollection/sleep の data 要素。
+// daily_sleep と異なり、実際の就寝・起床時刻や睡眠効率(%)が含まれる。
+type Sleep struct {
+	ID                 string `json:"id"`
+	Day                string `json:"day"`
+	BedtimeEnd         string `json:"bedtime_end"`          // 起床時刻 ISO8601
+	TotalSleepDuration *int   `json:"total_sleep_duration"` // 総睡眠時間（秒）
+	Efficiency         *int   `json:"efficiency"`           // 睡眠効率（%）
+	Score              *int   `json:"score"`
+}
+
 // InterbeatInterval は /v2/usercollection/interbeat_interval の data 要素
 type InterbeatInterval struct {
 	ID        string    `json:"id"`
@@ -99,6 +110,20 @@ func (c *Client) GetDailySleep(ctx context.Context, date string) (*DailySleep, e
 	}
 	if len(resp.Data) == 0 {
 		return nil, fmt.Errorf("oura: no sleep data for %s", date)
+	}
+	return &resp.Data[0], nil
+}
+
+// GetSleep は /v2/usercollection/sleep から実際の睡眠詳細を取得する。
+// daily_sleep ではスコアしか得られないため、WakeTime と TotalMinutes はこちらで取得する。
+func (c *Client) GetSleep(ctx context.Context, date string) (*Sleep, error) {
+	url := fmt.Sprintf("%s/v2/usercollection/sleep?start_date=%s&end_date=%s", baseURL, date, date)
+	var resp listResponse[Sleep]
+	if err := c.get(ctx, url, &resp); err != nil {
+		return nil, fmt.Errorf("oura: get sleep: %w", err)
+	}
+	if len(resp.Data) == 0 {
+		return nil, fmt.Errorf("oura: no sleep detail for %s", date)
 	}
 	return &resp.Data[0], nil
 }

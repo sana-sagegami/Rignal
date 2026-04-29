@@ -27,11 +27,12 @@ func main() {
 	readinessRepo := repositories.NewReadinessRepository(db)
 	sleepRepo := repositories.NewSleepRepository(db)
 	summaryRepo := repositories.NewSummaryRepository(db)
+	ibiRepo := repositories.NewIBIRepository(db)
 
 	// --- サービス層 ---
 	logService := services.NewLogService(logRepo)
 	userService := services.NewUserService(userRepo)
-	analyzerService := services.NewAnalyzerService(ouraClient, readinessRepo, sleepRepo, summaryRepo)
+	analyzerService := services.NewAnalyzerService(ouraClient, readinessRepo, sleepRepo, summaryRepo, ibiRepo)
 
 	// --- コントローラー層 ---
 	logCtrl := httpctrl.NewLogController(logService)
@@ -57,7 +58,7 @@ func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	poller := worker.NewPoller(ouraClient, analyzerService)
+	poller := worker.NewPoller(ouraClient, analyzerService, ibiRepo)
 	go poller.Start(ctx)
 
 	fmt.Println("Auto-Zen Backend is starting on :8081...")
