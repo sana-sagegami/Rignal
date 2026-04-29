@@ -6,6 +6,7 @@ import (
 	"auto-zen-backend/middlewares"
 	"auto-zen-backend/repositories"
 	"auto-zen-backend/services"
+	"auto-zen-backend/worker"
 	"fmt"
 
 	"github.com/gin-gonic/gin"
@@ -43,6 +44,10 @@ authorized.Use(middlewares.AuthMiddleware())
 	r.POST("/login", userCtrl.Login)
 
 	fmt.Printf("/signup handler type: %T\n", userCtrl.Signup)
+
+	// worker を goroutine で起動
+    poller := worker.NewPoller(ouraClient, analyzerService)
+    go poller.Start(ctx)
 
 	// サーバー起動
 	fmt.Println("Auto-Zen Backend is starting on :8081...")
