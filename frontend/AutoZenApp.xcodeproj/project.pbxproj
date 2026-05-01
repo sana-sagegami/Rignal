@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		278E0644608F2F30F794E674 /* TuistAssets+AutoZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533421479251070C1AB70DC /* TuistAssets+AutoZenApp.swift */; };
+		5348C2AB098F200F4ABF836D /* TuistBundle+AutoZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68FB896D4A07D631B619F /* TuistBundle+AutoZenApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EAE4376B706CAA8C75DE7DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DAF1FBBCBFF5EAFC70B9364 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5607D78A2D3F5ABC9689BD7;
+			remoteInfo = AutoZenApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12E9612BFEFC49C325661A50 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB085F620205A0D579BBA29A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		436D1D10028B6555E44FEA4F /* AutoZenAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AutoZenAppTests-Info.plist"; sourceTree = "<group>"; };
+		7CA68FB896D4A07D631B619F /* TuistBundle+AutoZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+AutoZenApp.swift"; sourceTree = "<group>"; };
+		B0F5F21CC72FB748055CC583 /* AutoZenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoZenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9ABC5E4B4B0BC66E4D835F0 /* AutoZenApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AutoZenApp-Info.plist"; sourceTree = "<group>"; };
+		E533421479251070C1AB70DC /* TuistAssets+AutoZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+AutoZenApp.swift"; sourceTree = "<group>"; };
+		E5A641A626CE77BCDDA7C099 /* AutoZenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoZenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2BCDA38EDD731C580FFB2EC8 /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3420F8BF0469370C1BAD3A6F /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		61D6D4CABA5FD4687897D973 /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2263AF100466F74703088AB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5FF322FF73D152E267AC64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16E129B9A37F1EF0D7487141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5A641A626CE77BCDDA7C099 /* AutoZenApp.app */,
+				B0F5F21CC72FB748055CC583 /* AutoZenAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A880E29AF0ECEDD719AD4DC2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E533421479251070C1AB70DC /* TuistAssets+AutoZenApp.swift */,
+				7CA68FB896D4A07D631B619F /* TuistBundle+AutoZenApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DECACC07AFB7B746538F07BB /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				E35F5A0AC089CFB7BFB17748 /* InfoPlists */,
+				A880E29AF0ECEDD719AD4DC2 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		E35F5A0AC089CFB7BFB17748 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				B9ABC5E4B4B0BC66E4D835F0 /* AutoZenApp-Info.plist */,
+				436D1D10028B6555E44FEA4F /* AutoZenAppTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		F668A454F4D1DC4F00B5F5B9 = {
+			isa = PBXGroup;
+			children = (
+				16E129B9A37F1EF0D7487141 /* Products */,
+				FA713042307CEFF580975A0F /* Project */,
+			);
+			sourceTree = "<group>";
+		};
+		FA713042307CEFF580975A0F /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				FC08B7AD20D222BAB2F584CD /* AutoZenApp */,
+				DECACC07AFB7B746538F07BB /* Derived */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		FC08B7AD20D222BAB2F584CD /* AutoZenApp */ = {
+			isa = PBXGroup;
+			children = (
+				2BCDA38EDD731C580FFB2EC8 /* Resources */,
+				61D6D4CABA5FD4687897D973 /* Sources */,
+				3420F8BF0469370C1BAD3A6F /* Tests */,
+			);
+			path = AutoZenApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23573310A0BF8B939DB7DD15 /* AutoZenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0EF3F6BA3E7E737D89CACDC /* Build configuration list for PBXNativeTarget "AutoZenAppTests" */;
+			buildPhases = (
+				601C614C884B98C1A948ED7C /* Sources */,
+				326ABD8605BAC815EBC6AC45 /* Resources */,
+				2263AF100466F74703088AB1 /* Frameworks */,
+				12E9612BFEFC49C325661A50 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5298B529A36EB623C8A71CA6 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3420F8BF0469370C1BAD3A6F /* Tests */,
+			);
+			name = AutoZenAppTests;
+			packageProductDependencies = (
+			);
+			productName = AutoZenAppTests;
+			productReference = B0F5F21CC72FB748055CC583 /* AutoZenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D5607D78A2D3F5ABC9689BD7 /* AutoZenApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBE553715805076F09ACB70 /* Build configuration list for PBXNativeTarget "AutoZenApp" */;
+			buildPhases = (
+				7CBAD3DFA70D6AADF5D67501 /* Sources */,
+				DD429F5F435A4A147ED56546 /* Resources */,
+				FB5FF322FF73D152E267AC64 /* Frameworks */,
+				FB085F620205A0D579BBA29A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				61D6D4CABA5FD4687897D973 /* Sources */,
+				2BCDA38EDD731C580FFB2EC8 /* Resources */,
+			);
+			name = AutoZenApp;
+			packageProductDependencies = (
+			);
+			productName = AutoZenApp;
+			productReference = E5A641A626CE77BCDDA7C099 /* AutoZenApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DAF1FBBCBFF5EAFC70B9364 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+					23573310A0BF8B939DB7DD15 = {
+						TestTargetID = D5607D78A2D3F5ABC9689BD7;
+					};
+				};
+			};
+			buildConfigurationList = 889C5EF113D146C3301E59AD /* Build configuration list for PBXProject "AutoZenApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F668A454F4D1DC4F00B5F5B9;
+			productRefGroup = 16E129B9A37F1EF0D7487141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D5607D78A2D3F5ABC9689BD7 /* AutoZenApp */,
+				23573310A0BF8B939DB7DD15 /* AutoZenAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		326ABD8605BAC815EBC6AC45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD429F5F435A4A147ED56546 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601C614C884B98C1A948ED7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAD3DFA70D6AADF5D67501 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278E0644608F2F30F794E674 /* TuistAssets+AutoZenApp.swift in Sources */,
+				5348C2AB098F200F4ABF836D /* TuistBundle+AutoZenApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5298B529A36EB623C8A71CA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AutoZenApp;
+			target = D5607D78A2D3F5ABC9689BD7 /* AutoZenApp */;
+			targetProxy = 4EAE4376B706CAA8C75DE7DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03F5E4E262849C66D36A161F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		68EC86B21407E5DEC81ED401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7279F2E0B3FD64FF77D73D66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenApp-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenApp;
+				PRODUCT_NAME = AutoZenApp;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		844C7B27EFFD6F8644E1812E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenApp-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenApp;
+				PRODUCT_NAME = AutoZenApp;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCE1609DF4437B3847F3A086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenAppTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenAppTests;
+				PRODUCT_NAME = AutoZenAppTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoZenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoZenApp";
+				TEST_TARGET_NAME = AutoZenApp;
+			};
+			name = Release;
+		};
+		FC5F5E1EBCDB40DFF86629F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenAppTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenAppTests;
+				PRODUCT_NAME = AutoZenAppTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoZenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoZenApp";
+				TEST_TARGET_NAME = AutoZenApp;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		889C5EF113D146C3301E59AD /* Build configuration list for PBXProject "AutoZenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68EC86B21407E5DEC81ED401 /* Debug */,
+				03F5E4E262849C66D36A161F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0EF3F6BA3E7E737D89CACDC /* Build configuration list for PBXNativeTarget "AutoZenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC5F5E1EBCDB40DFF86629F0 /* Debug */,
+				BCE1609DF4437B3847F3A086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBE553715805076F09ACB70 /* Build configuration list for PBXNativeTarget "AutoZenApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				844C7B27EFFD6F8644E1812E /* Debug */,
+				7279F2E0B3FD64FF77D73D66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DAF1FBBCBFF5EAFC70B9364 /* Project object */;
+}
