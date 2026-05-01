@@ -38,6 +38,7 @@ func main() {
 	logCtrl := httpctrl.NewLogController(logService)
 	userCtrl := httpctrl.NewUserController(userService)
 	webhookCtrl := httpctrl.NewWebhookController(analyzerService, os.Getenv("OURA_WEBHOOK_VERIFY_TOKEN"))
+	summaryCtrl := httpctrl.NewSummaryController(summaryRepo)
 
 	// --- Gin ルーター ---
 	r := gin.Default()
@@ -48,6 +49,9 @@ func main() {
 		authorized.GET("/logs", logCtrl.GetLogs)
 		authorized.POST("/save", logCtrl.SaveLog)
 		authorized.DELETE("/delete", logCtrl.DeleteLog)
+
+		// Swift アプリ向け
+		authorized.GET("/summary", summaryCtrl.GetSummary)
 	}
 
 	r.POST("/signup", userCtrl.Signup)

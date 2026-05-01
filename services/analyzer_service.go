@@ -66,6 +66,7 @@ func (s *analyzerService) RunDailyAnalysis(ctx context.Context, date time.Time) 
 	if err := s.summaryRepo.Save(summary); err != nil {
 		return fmt.Errorf("analyzer: save summary: %w", err)
 	}
+
 	return nil
 }
 
