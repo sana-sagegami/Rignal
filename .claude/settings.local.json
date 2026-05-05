@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(tuist generate *)"
+      "Bash(tuist generate *)",
+      "Bash(ipconfig getifaddr *)"
     ]
   }
 }
