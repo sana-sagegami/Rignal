@@ -1,7 +1,7 @@
 package http
 
 import (
-	"auto-zen-backend/models"
+	"rignal/models"
 	"time"
 )
 

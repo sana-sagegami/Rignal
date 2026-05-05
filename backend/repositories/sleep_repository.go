@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"auto-zen-backend/models"
+	"rignal/models"
 	"time"
 
 	"gorm.io/gorm"

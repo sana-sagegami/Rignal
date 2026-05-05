@@ -1,8 +1,8 @@
 package http
 
 import (
-	dto "auto-zen-backend/dto/http"
-	"auto-zen-backend/services"
+	dto "rignal/dto/http"
+	"rignal/services"
 	"context"
 	"log"
 	"net/http"

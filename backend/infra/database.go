@@ -1,7 +1,7 @@
 package infra
 
 import (
-	"auto-zen-backend/models"
+	"rignal/models"
 	"fmt"
 	"log"
 	"os"

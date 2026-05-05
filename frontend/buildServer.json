@@ -12,8 +12,8 @@
 	"argv": [
 		"/opt/homebrew/bin/xcode-build-server"
 	],
-	"workspace": "/Users/x24042xx/AutoZenApp/AutoZenApp.xcworkspace",
-	"build_root": "/Users/x24042xx/Library/Developer/Xcode/DerivedData/AutoZenApp-clnohyyluklqvycaohtpaxgcvuhq",
-	"scheme": "AutoZenApp",
+	"workspace": "/Users/x24042xx/Rignal/frontend/RignalApp.xcworkspace",
+	"build_root": "/Users/x24042xx/Library/Developer/Xcode/DerivedData/RignalApp",
+	"scheme": "RignalApp",
 	"kind": "xcode"
 }

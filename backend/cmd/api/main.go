@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"os"
 
-	httpctrl "auto-zen-backend/controllers/http"
-	"auto-zen-backend/infra"
-	"auto-zen-backend/infra/oura"
-	"auto-zen-backend/middlewares"
-	"auto-zen-backend/repositories"
-	"auto-zen-backend/services"
-	"auto-zen-backend/worker"
+	httpctrl "rignal/controllers/http"
+	"rignal/infra"
+	"rignal/infra/oura"
+	"rignal/middlewares"
+	"rignal/repositories"
+	"rignal/services"
+	"rignal/worker"
 
 	"github.com/gin-gonic/gin"
 )
@@ -65,6 +65,6 @@ func main() {
 	poller := worker.NewPoller(ouraClient, analyzerService, ibiRepo)
 	go poller.Start(ctx)
 
-	fmt.Println("Auto-Zen Backend is starting on :8081...")
+	fmt.Println("Rignal is starting on :8081...")
 	r.Run(":8081")
 }

@@ -1,8 +1,8 @@
 package services
 
 import (
-	"auto-zen-backend/models"
-	"auto-zen-backend/repositories"
+	"rignal/models"
+	"rignal/repositories"
 )
 
 type LogService interface {

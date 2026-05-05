@@ -1,10 +1,10 @@
 package worker
 
 import (
-	"auto-zen-backend/infra/oura"
-	"auto-zen-backend/models"
-	"auto-zen-backend/repositories"
-	"auto-zen-backend/services"
+	"rignal/infra/oura"
+	"rignal/models"
+	"rignal/repositories"
+	"rignal/services"
 	"context"
 	"log"
 	"time"

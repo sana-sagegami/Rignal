@@ -30,9 +30,9 @@ import SwiftUI
 
 // MARK: - Asset Catalogs
 
-public enum AutoZenAppAsset: Sendable {
+public enum RignalAppAsset: Sendable {
   public enum Assets {
-  public static let accentColor = AutoZenAppColors(name: "AccentColor")
+  public static let accentColor = RignalAppColors(name: "AccentColor")
   }
   public enum PreviewAssets {
   }
@@ -40,7 +40,7 @@ public enum AutoZenAppAsset: Sendable {
 
 // MARK: - Implementation Details
 
-public final class AutoZenAppColors: Sendable {
+public final class RignalAppColors: Sendable {
   public let name: String
 
   #if os(macOS)
@@ -69,9 +69,9 @@ public final class AutoZenAppColors: Sendable {
   }
 }
 
-public extension AutoZenAppColors.Color {
+public extension RignalAppColors.Color {
   @available(iOS 11.0, tvOS 11.0, watchOS 4.0, macOS 10.13, visionOS 1.0, *)
-  convenience init?(asset: AutoZenAppColors) {
+  convenience init?(asset: RignalAppColors) {
     let bundle = Bundle.module
     #if os(iOS) || os(tvOS) || os(visionOS)
     self.init(named: asset.name, in: bundle, compatibleWith: nil)
@@ -86,7 +86,7 @@ public extension AutoZenAppColors.Color {
 #if canImport(SwiftUI)
 @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, visionOS 1.0, *)
 public extension SwiftUI.Color {
-  init(asset: AutoZenAppColors) {
+  init(asset: RignalAppColors) {
     let bundle = Bundle.module
     self.init(asset.name, bundle: bundle)
   }

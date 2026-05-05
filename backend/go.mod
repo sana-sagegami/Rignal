@@ -1,4 +1,4 @@
-module auto-zen-backend
+module rignal
 
 go 1.25.1
 

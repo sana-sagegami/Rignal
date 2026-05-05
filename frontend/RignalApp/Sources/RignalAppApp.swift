@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AutoZenAppApp: App {
+struct RignalAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

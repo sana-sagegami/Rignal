@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		278E0644608F2F30F794E674 /* TuistAssets+AutoZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E533421479251070C1AB70DC /* TuistAssets+AutoZenApp.swift */; };
-		5348C2AB098F200F4ABF836D /* TuistBundle+AutoZenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA68FB896D4A07D631B619F /* TuistBundle+AutoZenApp.swift */; };
+		11F81F05680C42A357CA9294 /* TuistBundle+RignalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89270EC680F1A47ACCE6275 /* TuistBundle+RignalApp.swift */; };
+		BE8E8B0B13F8EEB252F7FBC1 /* TuistAssets+RignalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2616639BD644B833A29F4C /* TuistAssets+RignalApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4EAE4376B706CAA8C75DE7DE /* PBXContainerItemProxy */ = {
+		BDF061D610E23A5E4C6E29CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8DAF1FBBCBFF5EAFC70B9364 /* Project object */;
+			containerPortal = 0BB6A799BC392819F98516A3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D5607D78A2D3F5ABC9689BD7;
-			remoteInfo = AutoZenApp;
+			remoteGlobalIDString = 56D5FA579616DD29B110C2AF;
+			remoteInfo = RignalApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		12E9612BFEFC49C325661A50 /* Embed Frameworks */ = {
+		065C9859EE2FB53F84457D3D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -32,7 +32,7 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB085F620205A0D579BBA29A /* Embed Frameworks */ = {
+		3C17C842F3E9B00BAEF230D5 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
@@ -45,25 +45,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		436D1D10028B6555E44FEA4F /* AutoZenAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AutoZenAppTests-Info.plist"; sourceTree = "<group>"; };
-		7CA68FB896D4A07D631B619F /* TuistBundle+AutoZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+AutoZenApp.swift"; sourceTree = "<group>"; };
-		B0F5F21CC72FB748055CC583 /* AutoZenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoZenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9ABC5E4B4B0BC66E4D835F0 /* AutoZenApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AutoZenApp-Info.plist"; sourceTree = "<group>"; };
-		E533421479251070C1AB70DC /* TuistAssets+AutoZenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+AutoZenApp.swift"; sourceTree = "<group>"; };
-		E5A641A626CE77BCDDA7C099 /* AutoZenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoZenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		167197BAF47A0D114403DEDA /* RignalAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RignalAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2616639BD644B833A29F4C /* TuistAssets+RignalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+RignalApp.swift"; sourceTree = "<group>"; };
+		4ED1E70CF3B3D24865BB7C9B /* RignalAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RignalAppTests-Info.plist"; sourceTree = "<group>"; };
+		6261DCFCFC4FAA9F236237FE /* RignalApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RignalApp-Info.plist"; sourceTree = "<group>"; };
+		D89270EC680F1A47ACCE6275 /* TuistBundle+RignalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+RignalApp.swift"; sourceTree = "<group>"; };
+		FADD30E2A69E53B36C3FCA08 /* RignalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RignalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2BCDA38EDD731C580FFB2EC8 /* Resources */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		3420F8BF0469370C1BAD3A6F /* Tests */ = {
+		1FD5F40DC1FFEDA97F639ED0 /* Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			explicitFileTypes = {
 			};
@@ -72,7 +63,7 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		61D6D4CABA5FD4687897D973 /* Sources */ = {
+		4FD735E99BD9300137452894 /* Sources */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			explicitFileTypes = {
 			};
@@ -81,17 +72,26 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		974D7375DE60AEA10668977C /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2263AF100466F74703088AB1 /* Frameworks */ = {
+		17D894BB4D36820A82D92902 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB5FF322FF73D152E267AC64 /* Frameworks */ = {
+		C38EF7B483C36DB9379F6CAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,134 +101,134 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16E129B9A37F1EF0D7487141 /* Products */ = {
+		00BC8F3A92CEEF2C4A6F9A66 = {
 			isa = PBXGroup;
 			children = (
-				E5A641A626CE77BCDDA7C099 /* AutoZenApp.app */,
-				B0F5F21CC72FB748055CC583 /* AutoZenAppTests.xctest */,
+				035DC08C850A0F8AAA08FBC4 /* Products */,
+				D06FCBB5B26B193E9BC6FAAF /* Project */,
+			);
+			sourceTree = "<group>";
+		};
+		035DC08C850A0F8AAA08FBC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FADD30E2A69E53B36C3FCA08 /* RignalApp.app */,
+				167197BAF47A0D114403DEDA /* RignalAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A880E29AF0ECEDD719AD4DC2 /* Sources */ = {
+		0D47EE663FCCC0D4ADC27364 /* InfoPlists */ = {
 			isa = PBXGroup;
 			children = (
-				E533421479251070C1AB70DC /* TuistAssets+AutoZenApp.swift */,
-				7CA68FB896D4A07D631B619F /* TuistBundle+AutoZenApp.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		DECACC07AFB7B746538F07BB /* Derived */ = {
-			isa = PBXGroup;
-			children = (
-				E35F5A0AC089CFB7BFB17748 /* InfoPlists */,
-				A880E29AF0ECEDD719AD4DC2 /* Sources */,
-			);
-			path = Derived;
-			sourceTree = "<group>";
-		};
-		E35F5A0AC089CFB7BFB17748 /* InfoPlists */ = {
-			isa = PBXGroup;
-			children = (
-				B9ABC5E4B4B0BC66E4D835F0 /* AutoZenApp-Info.plist */,
-				436D1D10028B6555E44FEA4F /* AutoZenAppTests-Info.plist */,
+				6261DCFCFC4FAA9F236237FE /* RignalApp-Info.plist */,
+				4ED1E70CF3B3D24865BB7C9B /* RignalAppTests-Info.plist */,
 			);
 			path = InfoPlists;
 			sourceTree = "<group>";
 		};
-		F668A454F4D1DC4F00B5F5B9 = {
+		C2D65D81F578F6AF9DB950F5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				16E129B9A37F1EF0D7487141 /* Products */,
-				FA713042307CEFF580975A0F /* Project */,
+				4D2616639BD644B833A29F4C /* TuistAssets+RignalApp.swift */,
+				D89270EC680F1A47ACCE6275 /* TuistBundle+RignalApp.swift */,
 			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		FA713042307CEFF580975A0F /* Project */ = {
+		D06FCBB5B26B193E9BC6FAAF /* Project */ = {
 			isa = PBXGroup;
 			children = (
-				FC08B7AD20D222BAB2F584CD /* AutoZenApp */,
-				DECACC07AFB7B746538F07BB /* Derived */,
+				E9F2A131E7E2F56893B84479 /* Derived */,
+				F60CA708D187171DDBFD1FCA /* RignalApp */,
 			);
 			name = Project;
 			sourceTree = "<group>";
 		};
-		FC08B7AD20D222BAB2F584CD /* AutoZenApp */ = {
+		E9F2A131E7E2F56893B84479 /* Derived */ = {
 			isa = PBXGroup;
 			children = (
-				2BCDA38EDD731C580FFB2EC8 /* Resources */,
-				61D6D4CABA5FD4687897D973 /* Sources */,
-				3420F8BF0469370C1BAD3A6F /* Tests */,
+				0D47EE663FCCC0D4ADC27364 /* InfoPlists */,
+				C2D65D81F578F6AF9DB950F5 /* Sources */,
 			);
-			path = AutoZenApp;
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		F60CA708D187171DDBFD1FCA /* RignalApp */ = {
+			isa = PBXGroup;
+			children = (
+				974D7375DE60AEA10668977C /* Resources */,
+				4FD735E99BD9300137452894 /* Sources */,
+				1FD5F40DC1FFEDA97F639ED0 /* Tests */,
+			);
+			path = RignalApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		23573310A0BF8B939DB7DD15 /* AutoZenAppTests */ = {
+		1F8DEFEB14E7A5BDB5E61CC1 /* RignalAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0EF3F6BA3E7E737D89CACDC /* Build configuration list for PBXNativeTarget "AutoZenAppTests" */;
+			buildConfigurationList = 61BD90D06C014F32C1606205 /* Build configuration list for PBXNativeTarget "RignalAppTests" */;
 			buildPhases = (
-				601C614C884B98C1A948ED7C /* Sources */,
-				326ABD8605BAC815EBC6AC45 /* Resources */,
-				2263AF100466F74703088AB1 /* Frameworks */,
-				12E9612BFEFC49C325661A50 /* Embed Frameworks */,
+				775479D6ABBE5E66B61FEDE8 /* Sources */,
+				4B6CBEC5E70F142443312E61 /* Resources */,
+				17D894BB4D36820A82D92902 /* Frameworks */,
+				065C9859EE2FB53F84457D3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5298B529A36EB623C8A71CA6 /* PBXTargetDependency */,
+				D52D14D3A9EFEFB47B8F7FA2 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				3420F8BF0469370C1BAD3A6F /* Tests */,
+				1FD5F40DC1FFEDA97F639ED0 /* Tests */,
 			);
-			name = AutoZenAppTests;
+			name = RignalAppTests;
 			packageProductDependencies = (
 			);
-			productName = AutoZenAppTests;
-			productReference = B0F5F21CC72FB748055CC583 /* AutoZenAppTests.xctest */;
+			productName = RignalAppTests;
+			productReference = 167197BAF47A0D114403DEDA /* RignalAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D5607D78A2D3F5ABC9689BD7 /* AutoZenApp */ = {
+		56D5FA579616DD29B110C2AF /* RignalApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBBE553715805076F09ACB70 /* Build configuration list for PBXNativeTarget "AutoZenApp" */;
+			buildConfigurationList = 076A5A33F8BB59A105190515 /* Build configuration list for PBXNativeTarget "RignalApp" */;
 			buildPhases = (
-				7CBAD3DFA70D6AADF5D67501 /* Sources */,
-				DD429F5F435A4A147ED56546 /* Resources */,
-				FB5FF322FF73D152E267AC64 /* Frameworks */,
-				FB085F620205A0D579BBA29A /* Embed Frameworks */,
+				99004C8C3ADF7316FB43C6B5 /* Sources */,
+				200E48C433048B02E165BA98 /* Resources */,
+				C38EF7B483C36DB9379F6CAA /* Frameworks */,
+				3C17C842F3E9B00BAEF230D5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				61D6D4CABA5FD4687897D973 /* Sources */,
-				2BCDA38EDD731C580FFB2EC8 /* Resources */,
+				4FD735E99BD9300137452894 /* Sources */,
+				974D7375DE60AEA10668977C /* Resources */,
 			);
-			name = AutoZenApp;
+			name = RignalApp;
 			packageProductDependencies = (
 			);
-			productName = AutoZenApp;
-			productReference = E5A641A626CE77BCDDA7C099 /* AutoZenApp.app */;
+			productName = RignalApp;
+			productReference = FADD30E2A69E53B36C3FCA08 /* RignalApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8DAF1FBBCBFF5EAFC70B9364 /* Project object */ = {
+		0BB6A799BC392819F98516A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				TargetAttributes = {
-					23573310A0BF8B939DB7DD15 = {
-						TestTargetID = D5607D78A2D3F5ABC9689BD7;
+					1F8DEFEB14E7A5BDB5E61CC1 = {
+						TestTargetID = 56D5FA579616DD29B110C2AF;
 					};
 				};
 			};
-			buildConfigurationList = 889C5EF113D146C3301E59AD /* Build configuration list for PBXProject "AutoZenApp" */;
+			buildConfigurationList = 1703D434B8461E41ACB589E9 /* Build configuration list for PBXProject "RignalApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -236,26 +236,26 @@
 				Base,
 				en,
 			);
-			mainGroup = F668A454F4D1DC4F00B5F5B9;
-			productRefGroup = 16E129B9A37F1EF0D7487141 /* Products */;
+			mainGroup = 00BC8F3A92CEEF2C4A6F9A66;
+			productRefGroup = 035DC08C850A0F8AAA08FBC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5607D78A2D3F5ABC9689BD7 /* AutoZenApp */,
-				23573310A0BF8B939DB7DD15 /* AutoZenAppTests */,
+				56D5FA579616DD29B110C2AF /* RignalApp */,
+				1F8DEFEB14E7A5BDB5E61CC1 /* RignalAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		326ABD8605BAC815EBC6AC45 /* Resources */ = {
+		200E48C433048B02E165BA98 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DD429F5F435A4A147ED56546 /* Resources */ = {
+		4B6CBEC5E70F142443312E61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,35 +265,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		601C614C884B98C1A948ED7C /* Sources */ = {
+		775479D6ABBE5E66B61FEDE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CBAD3DFA70D6AADF5D67501 /* Sources */ = {
+		99004C8C3ADF7316FB43C6B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				278E0644608F2F30F794E674 /* TuistAssets+AutoZenApp.swift in Sources */,
-				5348C2AB098F200F4ABF836D /* TuistBundle+AutoZenApp.swift in Sources */,
+				BE8E8B0B13F8EEB252F7FBC1 /* TuistAssets+RignalApp.swift in Sources */,
+				11F81F05680C42A357CA9294 /* TuistBundle+RignalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5298B529A36EB623C8A71CA6 /* PBXTargetDependency */ = {
+		D52D14D3A9EFEFB47B8F7FA2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = AutoZenApp;
-			target = D5607D78A2D3F5ABC9689BD7 /* AutoZenApp */;
-			targetProxy = 4EAE4376B706CAA8C75DE7DE /* PBXContainerItemProxy */;
+			name = RignalApp;
+			target = 56D5FA579616DD29B110C2AF /* RignalApp */;
+			targetProxy = BDF061D610E23A5E4C6E29CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03F5E4E262849C66D36A161F /* Release */ = {
+		47DDED9B1EEEFE4B02239F82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +346,66 @@
 			};
 			name = Release;
 		};
-		68EC86B21407E5DEC81ED401 /* Debug */ = {
+		7E9001CFD2531E41187001A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/RignalAppTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.RignalAppTests;
+				PRODUCT_NAME = RignalAppTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RignalApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RignalApp";
+				TEST_TARGET_NAME = RignalApp;
+			};
+			name = Release;
+		};
+		AD1026EF1754D0D835ECB5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/RignalApp-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.RignalApp;
+				PRODUCT_NAME = RignalApp;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF9998799A3840C619538C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -405,53 +464,23 @@
 			};
 			name = Debug;
 		};
-		7279F2E0B3FD64FF77D73D66 /* Release */ = {
+		B886BC50A1FF6B7763EEFC77 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenApp-Info.plist";
+				INFOPLIST_FILE = "Derived/InfoPlists/RignalAppTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenApp;
-				PRODUCT_NAME = AutoZenApp;
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		844C7B27EFFD6F8644E1812E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenApp-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenApp;
-				PRODUCT_NAME = AutoZenApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.RignalAppTests;
+				PRODUCT_NAME = RignalAppTests;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -464,56 +493,29 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RignalApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RignalApp";
+				TEST_TARGET_NAME = RignalApp;
 			};
 			name = Debug;
 		};
-		BCE1609DF4437B3847F3A086 /* Release */ = {
+		FCB007DCC05BE2E85B2967EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenAppTests-Info.plist";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/RignalApp-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenAppTests;
-				PRODUCT_NAME = AutoZenAppTests;
-				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoZenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoZenApp";
-				TEST_TARGET_NAME = AutoZenApp;
-			};
-			name = Release;
-		};
-		FC5F5E1EBCDB40DFF86629F0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "Derived/InfoPlists/AutoZenAppTests-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L$(DT_TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.AutoZenAppTests;
-				PRODUCT_NAME = AutoZenAppTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.RignalApp;
+				PRODUCT_NAME = RignalApp;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -526,42 +528,40 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoZenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AutoZenApp";
-				TEST_TARGET_NAME = AutoZenApp;
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		889C5EF113D146C3301E59AD /* Build configuration list for PBXProject "AutoZenApp" */ = {
+		076A5A33F8BB59A105190515 /* Build configuration list for PBXNativeTarget "RignalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				68EC86B21407E5DEC81ED401 /* Debug */,
-				03F5E4E262849C66D36A161F /* Release */,
+				FCB007DCC05BE2E85B2967EE /* Debug */,
+				AD1026EF1754D0D835ECB5D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0EF3F6BA3E7E737D89CACDC /* Build configuration list for PBXNativeTarget "AutoZenAppTests" */ = {
+		1703D434B8461E41ACB589E9 /* Build configuration list for PBXProject "RignalApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC5F5E1EBCDB40DFF86629F0 /* Debug */,
-				BCE1609DF4437B3847F3A086 /* Release */,
+				AF9998799A3840C619538C0D /* Debug */,
+				47DDED9B1EEEFE4B02239F82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBBE553715805076F09ACB70 /* Build configuration list for PBXNativeTarget "AutoZenApp" */ = {
+		61BD90D06C014F32C1606205 /* Build configuration list for PBXNativeTarget "RignalAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				844C7B27EFFD6F8644E1812E /* Debug */,
-				7279F2E0B3FD64FF77D73D66 /* Release */,
+				B886BC50A1FF6B7763EEFC77 /* Debug */,
+				7E9001CFD2531E41187001A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8DAF1FBBCBFF5EAFC70B9364 /* Project object */;
+	rootObject = 0BB6A799BC392819F98516A3 /* Project object */;
 }

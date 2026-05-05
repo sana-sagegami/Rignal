@@ -1,9 +1,9 @@
 package services
 
 import (
-	"auto-zen-backend/infra/oura"
-	"auto-zen-backend/models"
-	"auto-zen-backend/repositories"
+	"rignal/infra/oura"
+	"rignal/models"
+	"rignal/repositories"
 	"context"
 	"encoding/json"
 	"fmt"

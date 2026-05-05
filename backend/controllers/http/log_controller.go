@@ -1,7 +1,7 @@
 package http
 
 import (
-	"auto-zen-backend/services"
+	"rignal/services"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

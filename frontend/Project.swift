@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "AutoZenApp",
+    name: "RignalApp",
     targets: [
         .target(
-            name: "AutoZenApp",
+            name: "RignalApp",
             destinations: .iOS,
             product: .app,
-            bundleId: "dev.tuist.AutoZenApp",
+            bundleId: "dev.tuist.RignalApp",
             infoPlist: .extendingDefault(
                 with: [
                     "UILaunchScreen": [
@@ -17,21 +17,21 @@ let project = Project(
                 ]
             ),
             buildableFolders: [
-                "AutoZenApp/Sources",
-                "AutoZenApp/Resources",
+                "RignalApp/Sources",
+                "RignalApp/Resources",
             ],
             dependencies: []
         ),
         .target(
-            name: "AutoZenAppTests",
+            name: "RignalAppTests",
             destinations: .iOS,
             product: .unitTests,
-            bundleId: "dev.tuist.AutoZenAppTests",
+            bundleId: "dev.tuist.RignalAppTests",
             infoPlist: .default,
             buildableFolders: [
-                "AutoZenApp/Tests"
+                "RignalApp/Tests"
             ],
-            dependencies: [.target(name: "AutoZenApp")]
+            dependencies: [.target(name: "RignalApp")]
         ),
     ]
 )

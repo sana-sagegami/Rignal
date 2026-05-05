@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5607D78A2D3F5ABC9689BD7"
-               BuildableName = "AutoZenApp.app"
-               BlueprintName = "AutoZenApp"
-               ReferencedContainer = "container:AutoZenApp.xcodeproj">
+               BlueprintIdentifier = "56D5FA579616DD29B110C2AF"
+               BuildableName = "RignalApp.app"
+               BlueprintName = "RignalApp"
+               ReferencedContainer = "container:RignalApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,10 +33,10 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "23573310A0BF8B939DB7DD15"
-               BuildableName = "AutoZenAppTests.xctest"
-               BlueprintName = "AutoZenAppTests"
-               ReferencedContainer = "container:AutoZenApp.xcodeproj">
+               BlueprintIdentifier = "1F8DEFEB14E7A5BDB5E61CC1"
+               BuildableName = "RignalAppTests.xctest"
+               BlueprintName = "RignalAppTests"
+               ReferencedContainer = "container:RignalApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5607D78A2D3F5ABC9689BD7"
-            BuildableName = "AutoZenApp.app"
-            BlueprintName = "AutoZenApp"
-            ReferencedContainer = "container:AutoZenApp.xcodeproj">
+            BlueprintIdentifier = "56D5FA579616DD29B110C2AF"
+            BuildableName = "RignalApp.app"
+            BlueprintName = "RignalApp"
+            ReferencedContainer = "container:RignalApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,10 +72,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5607D78A2D3F5ABC9689BD7"
-            BuildableName = "AutoZenApp.app"
-            BlueprintName = "AutoZenApp"
-            ReferencedContainer = "container:AutoZenApp.xcodeproj">
+            BlueprintIdentifier = "56D5FA579616DD29B110C2AF"
+            BuildableName = "RignalApp.app"
+            BlueprintName = "RignalApp"
+            ReferencedContainer = "container:RignalApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

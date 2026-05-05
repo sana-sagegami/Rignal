@@ -4,19 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AutoZenApp-Workspace.xcscheme_^#shared#^_</key>
+		<key>RignalApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
 			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
-		</dict>
-		<key>Generate Project.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 	</dict>
 </dict>
