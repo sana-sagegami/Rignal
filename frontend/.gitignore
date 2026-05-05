@@ -1,0 +1,26 @@
+# Tuist
+# 生成されたプロジェクトファイルやビルドキャッシュ
+Derived/
+.build/
+Tuist/.build/
+graph.dot
+
+# Swift Package Manager (Tuistが使用する場合)
+.swiftpm/
+.concurrency/
+
+# Xcode の個人設定
+*.xcuserstate
+xcuserdata/
+
+# SweetPad / SourceKit-LSP
+.build/
+.swiftpm/
+.index/
+
+# Xcode Project & Workspace (Tuistで生成されるため不要)
+*.xcodeproj
+*.xcworkspace
+
+# Tuist の依存関係解決ファイル (Tuist/Package.swift で管理しているなら不要)
+Tuist/Package.resolved
