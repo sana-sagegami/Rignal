@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(tuist generate *)",
-      "Bash(ipconfig getifaddr *)"
+      "Bash(ipconfig getifaddr *)",
+      "Bash(pg_isready)",
+      "Bash(brew services *)"
     ]
   }
 }

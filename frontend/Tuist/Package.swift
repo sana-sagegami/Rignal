@@ -4,14 +4,7 @@ import PackageDescription
 #if TUIST
     import struct ProjectDescription.PackageSettings
 
-    let packageSettings = PackageSettings(
-        productTypes: [
-            "GoogleSignIn": .framework,
-            "GoogleSignInSwift": .framework,
-            "AppAuth": .framework,
-            "GTMAppAuth": .framework,
-        ]
-    )
+    let packageSettings = PackageSettings()
 #endif
 
 let package = Package(

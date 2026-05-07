@@ -16,12 +16,25 @@ struct DashboardView: View {
                     } else if let summary = viewModel.summary {
                         summaryContent(summary)
                     } else if let error = viewModel.errorMessage {
-                        Text("エラー: \(error)")
-                            .foregroundStyle(.red)
-                            .padding()
+                        VStack(spacing: 16) {
+                            Text("エラー: \(error)")
+                                .foregroundStyle(.red)
+                                .multilineTextAlignment(.center)
+                                .padding()
+                            Button("再読み込み") {
+                                Task { await viewModel.load(authManager: authManager) }
+                            }
+                            .buttonStyle(.bordered)
+                        }
                     } else {
-                        Text("データなし")
-                            .foregroundStyle(.secondary)
+                        VStack(spacing: 16) {
+                            Text("データなし")
+                                .foregroundStyle(.secondary)
+                            Button("再読み込み") {
+                                Task { await viewModel.load(authManager: authManager) }
+                            }
+                            .buttonStyle(.bordered)
+                        }
                     }
                 }
                 .navigationTitle("Rignal")
