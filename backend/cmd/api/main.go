@@ -4,6 +4,7 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"time"
 
 	httpctrl "rignal/controllers/http"
 	"rignal/infra"
@@ -49,10 +50,21 @@ func main() {
 		authorized.GET("/logs", logCtrl.GetLogs)
 		authorized.POST("/save", logCtrl.SaveLog)
 		authorized.DELETE("/delete", logCtrl.DeleteLog)
-
-		// Swift アプリ向け
-		authorized.GET("/summary", summaryCtrl.GetSummary)
 	}
+
+	// Swift アプリ向け（認証不要）
+	r.GET("/summary", summaryCtrl.GetSummary)
+
+	// 開発用: 手動で分析を実行して今日のサマリーを生成する
+	r.POST("/admin/analyze", func(c *gin.Context) {
+		yesterday := time.Now().AddDate(0, 0, -1)
+		go func() {
+			if err := analyzerService.RunDailyAnalysis(context.Background(), yesterday); err != nil {
+				fmt.Printf("[admin/analyze] failed: %v\n", err)
+			}
+		}()
+		c.JSON(200, gin.H{"message": "分析を開始しました（昨日のデータで今日のサマリーを生成）"})
+	})
 
 	r.POST("/signup", userCtrl.Signup)
 	r.POST("/login", userCtrl.Login)

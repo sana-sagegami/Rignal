@@ -14,7 +14,8 @@ let project = Project(
                         "UIColorName": "",
                         "UIImageName": "",
                     ],
-                    "BackendBaseURL": "http://192.168.1.18:8081",
+                    "BackendBaseURL": "http://10.10.120.160:8081",
+                    "NSLocalNetworkUsageDescription": "バックエンドサーバーへの接続にローカルネットワークへのアクセスが必要です。",
                     "NSAppTransportSecurity": [
                         "NSAllowsArbitraryLoads": true,
                     ],

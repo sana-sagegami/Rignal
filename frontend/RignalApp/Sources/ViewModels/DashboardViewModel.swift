@@ -13,6 +13,19 @@ final class DashboardViewModel {
     private let calendarService = CalendarService()
     private let notificationService = NotificationService()
 
+    func triggerAnalysis(authManager: GoogleAuthManager) async {
+        isLoading = true
+        errorMessage = nil
+        defer { isLoading = false }
+        do {
+            try await backend.triggerAnalysis()
+            try? await Task.sleep(for: .seconds(3))
+            await load(authManager: authManager)
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
     func load(authManager: GoogleAuthManager) async {
         isLoading = true
         errorMessage = nil

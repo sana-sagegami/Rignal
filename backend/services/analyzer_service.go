@@ -41,27 +41,30 @@ func NewAnalyzerService(
 
 // RunDailyAnalysis は Oura データを取得・保存し、コンディションスコアと通知内容を算出して
 // daily_summaries に保存する。Webhook と poller の両方から呼ばれる。
-func (s *analyzerService) RunDailyAnalysis(ctx context.Context, date time.Time) error {
-	dateStr := date.Format("2006-01-02")
+// RunDailyAnalysis は dataDate（Oura APIデータ日 = 昨日）のデータを取得・分析し、
+// summaryDate（ユーザーが見る日 = 今日）のサマリーとして保存する。
+func (s *analyzerService) RunDailyAnalysis(ctx context.Context, dataDate time.Time) error {
+	dateStr := dataDate.Format("2006-01-02")
+	summaryDate := dataDate.AddDate(0, 0, 1) // 昨夜のデータ → 今日のコンディションとして保存
 
-	if err := s.fetchAndSaveReadiness(ctx, date, dateStr); err != nil {
+	if err := s.fetchAndSaveReadiness(ctx, dataDate, dateStr); err != nil {
 		return fmt.Errorf("analyzer: %w", err)
 	}
-	if err := s.fetchAndSaveSleep(ctx, date, dateStr); err != nil {
+	if err := s.fetchAndSaveSleep(ctx, dataDate, dateStr); err != nil {
 		return fmt.Errorf("analyzer: %w", err)
 	}
 
-	readiness, err := s.readinessRepo.FindByDate(date)
+	readiness, err := s.readinessRepo.FindByDate(dataDate)
 	if err != nil {
 		return fmt.Errorf("analyzer: load readiness: %w", err)
 	}
-	sleep, err := s.sleepRepo.FindByDate(date)
+	sleep, err := s.sleepRepo.FindByDate(dataDate)
 	if err != nil {
 		return fmt.Errorf("analyzer: load sleep: %w", err)
 	}
 
-	conditionScore := s.calcConditionScore(date, readiness, sleep)
-	summary := s.buildSummary(date, conditionScore, sleep)
+	conditionScore := s.calcConditionScore(dataDate, readiness, sleep)
+	summary := s.buildSummary(summaryDate, conditionScore, sleep)
 
 	if err := s.summaryRepo.Save(summary); err != nil {
 		return fmt.Errorf("analyzer: save summary: %w", err)

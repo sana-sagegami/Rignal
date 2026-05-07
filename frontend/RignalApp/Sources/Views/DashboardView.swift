@@ -43,6 +43,16 @@ struct DashboardView: View {
                         Button("サインアウト") { authManager.signOut() }
                             .font(.footnote)
                     }
+                    #if DEBUG
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            Task { await viewModel.triggerAnalysis(authManager: authManager) }
+                        } label: {
+                            Label("分析実行", systemImage: "arrow.clockwise.circle")
+                                .font(.footnote)
+                        }
+                    }
+                    #endif
                 }
                 .task { await viewModel.load(authManager: authManager) }
                 .refreshable { await viewModel.load(authManager: authManager) }

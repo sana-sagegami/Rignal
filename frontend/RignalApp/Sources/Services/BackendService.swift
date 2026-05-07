@@ -10,6 +10,16 @@ struct BackendService {
         self.baseURL = url
     }
 
+    func triggerAnalysis() async throws {
+        guard let url = URL(string: "\(baseURL)/admin/analyze") else { throw URLError(.badURL) }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        let (_, response) = try await URLSession.shared.data(for: request)
+        if let http = response as? HTTPURLResponse, !(200..<300).contains(http.statusCode) {
+            throw URLError(.badServerResponse)
+        }
+    }
+
     func fetchSummary(nextEvent: String? = nil) async throws -> SummaryResponse {
         var components = URLComponents(string: "\(baseURL)/summary")!
         if let nextEvent {
@@ -17,7 +27,11 @@ struct BackendService {
         }
         guard let url = components.url else { throw URLError(.badURL) }
 
-        let (data, _) = try await URLSession.shared.data(from: url)
+        let (data, response) = try await URLSession.shared.data(from: url)
+
+        if let http = response as? HTTPURLResponse, !(200..<300).contains(http.statusCode) {
+            throw URLError(.badServerResponse)
+        }
 
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
