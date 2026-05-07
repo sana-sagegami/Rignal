@@ -7,7 +7,7 @@ let project = Project(
             name: "RignalApp",
             destinations: .iOS,
             product: .app,
-            bundleId: "dev.tuist.RignalApp",
+            bundleId: "me.bysana.rignal",
             infoPlist: .extendingDefault(
                 with: [
                     "UILaunchScreen": [
@@ -18,11 +18,11 @@ let project = Project(
                     "NSAppTransportSecurity": [
                         "NSAllowsArbitraryLoads": true,
                     ],
-                    "GIDClientID": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+                    "GIDClientID": "1017409461293-g590kpdc1vnt34sui1j0jua5eag2vk4m.apps.googleusercontent.com",
                     "CFBundleURLTypes": [
                         [
                             "CFBundleTypeRole": "Editor",
-                            "CFBundleURLSchemes": ["com.googleusercontent.apps.YOUR_CLIENT_ID"],
+                            "CFBundleURLSchemes": ["com.googleusercontent.apps.1017409461293-g590kpdc1vnt34sui1j0jua5eag2vk4m"],
                         ]
                     ],
                 ]
@@ -32,7 +32,7 @@ let project = Project(
                 "RignalApp/Resources",
             ],
             entitlements: .dictionary([
-                "com.apple.security.application-groups": .array([.string("group.dev.tuist.RignalApp")]),
+                "com.apple.security.application-groups": .array([.string("group.me.bysana.rignal")]),
             ]),
             dependencies: [
                 .external(name: "GoogleSignIn"),
@@ -51,7 +51,7 @@ let project = Project(
             name: "RignalWidget",
             destinations: .iOS,
             product: .appExtension,
-            bundleId: "dev.tuist.RignalApp.RignalWidget",
+            bundleId: "me.bysana.rignal.RignalWidget",
             infoPlist: .extendingDefault(
                 with: [
                     "NSExtension": [
@@ -63,7 +63,7 @@ let project = Project(
                 "RignalWidget/Sources",
             ],
             entitlements: .dictionary([
-                "com.apple.security.application-groups": .array([.string("group.dev.tuist.RignalApp")]),
+                "com.apple.security.application-groups": .array([.string("group.me.bysana.rignal")]),
             ]),
             dependencies: [
                 .sdk(name: "WidgetKit", type: .framework),
@@ -74,7 +74,7 @@ let project = Project(
             name: "RignalAppTests",
             destinations: .iOS,
             product: .unitTests,
-            bundleId: "dev.tuist.RignalAppTests",
+            bundleId: "me.bysana.rignalTests",
             infoPlist: .default,
             buildableFolders: [
                 "RignalApp/Tests"

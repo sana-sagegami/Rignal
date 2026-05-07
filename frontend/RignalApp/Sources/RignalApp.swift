@@ -2,7 +2,7 @@ import SwiftUI
 import GoogleSignIn
 
 @main
-struct RignalAppApp: App {
+struct RignalApp: App {
     @State private var authManager = GoogleAuthManager()
 
     var body: some Scene {

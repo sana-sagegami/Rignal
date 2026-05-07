@@ -70,7 +70,7 @@ frontend/
 │
 ├── RignalApp/
 │   ├── Sources/
-│   │   ├── RignalAppApp.swift          # エントリーポイント
+│   │   ├── RignalApp.swift          # エントリーポイント
 │   │   │
 │   │   ├── Views/
 │   │   │   └── DashboardView.swift      # ➕ メイン画面
