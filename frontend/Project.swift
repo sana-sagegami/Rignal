@@ -37,10 +37,15 @@ let project = Project(
             dependencies: [
                 .external(name: "GoogleSignIn"),
                 .external(name: "GoogleSignInSwift"),
+                .external(name: "AppAuth"),
+                .external(name: "GTMAppAuth"),
                 .external(name: "GoogleAPIClientForREST_Calendar"),
                 .sdk(name: "WidgetKit", type: .framework),
                 .target(name: "RignalWidget"),
-            ]
+            ],
+            settings: .settings(
+                base: ["OTHER_LDFLAGS": "$(inherited) -ObjC"]
+            ),
         ),
         .target(
             name: "RignalWidget",
